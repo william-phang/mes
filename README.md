@@ -146,7 +146,9 @@
 
 ## MES个人笔记
 
-[MES笔记有道云](http://note.youdao.com/noteshare?id=3d843775354cc7a503ad247a29997848)
+[MESA战略计划](http://note.youdao.com/noteshare?id=3d843775354cc7a503ad247a29997848)
+
+[10点技巧，教你成MES实施王者](http://note.youdao.com/noteshare?id=2d4cf9c9827c2f906d36ec4c146e7557)
 
 ## 部署云平台 使用阿里云 （https://www.aliyun.com）
 实现功能：
