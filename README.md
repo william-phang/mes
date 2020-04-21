@@ -150,6 +150,8 @@
 
 [10点技巧，教你成MES实施王者](http://note.youdao.com/noteshare?id=2d4cf9c9827c2f906d36ec4c146e7557)
 
+[MES需求收益评估，如何计算ROI，真香又学知识了](http://note.youdao.com/noteshare?id=5add9a164e26b5e039e7b0016daa19a4)
+
 ## 部署云平台 使用阿里云 （https://www.aliyun.com）
 实现功能：
 1. 用户管理：用户是系统操作者，该功能主要完成系统用户配置。
