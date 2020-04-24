@@ -152,8 +152,9 @@
 
 [MES需求收益评估，如何计算ROI，真香又学知识了](http://note.youdao.com/noteshare?id=5add9a164e26b5e039e7b0016daa19a4)
 
-[做MES重点不是学习别人的成功，而是明白他犯的错误](http://note.youdao.com/noteshare?id=ba5f58ec23376ebee9a9c09d95c3dcfa&sub=6D41144B187940A9B8D6E07F9CE991B1)
+[做MES重点不是学习别人的成功，而是明白他犯的错误](http://note.youdao.com/noteshare?id=ba5f58ec23376ebee9a9c09d95c3dcfa)
 
+[MES相关术语，字母缩写含义！看一遍就懂。不懂请再看一遍](http://note.youdao.com/noteshare?id=222fcb0a12288b8e5cc76ba94e1bb32d)
 ## 部署云平台 使用阿里云 （https://www.aliyun.com）
 实现功能：
 1. 用户管理：用户是系统操作者，该功能主要完成系统用户配置。
