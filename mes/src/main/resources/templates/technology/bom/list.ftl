@@ -17,7 +17,7 @@
                 <div class="layui-inline">
                     <label class="layui-form-label">物料编号</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="nameLike" autocomplete="off" class="layui-input">
+                        <input type="text" name="materielCodeLike" autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-inline">
@@ -70,9 +70,9 @@
                 }, {
                     field: 'materielCode', title: '物料编号'
                 }, {
-                    field: 'versionNumber', title: '版本号'
+                    field: 'materielDesc', title: '物料名称'
                 }, {
-                    field: 'state', title: 'BOM状态'
+                    field: 'versionNumber', title: '版本号'
                 }, {
                     field: 'factory', title: '所属工厂'
                 }, {
@@ -138,8 +138,13 @@
             }
             // 添加
             if (obj.event === 'add') {
+                var index = spLayer.open({
+                    title: '添加',
+                    area: ['70%', '90%'],
+                    content: '${request.contextPath}/technology/bom/add-or-update-ui'
+                });
                 //新开一个TAB标签 url  标题名称 图标
-                spLayui.createTableItem('/technology/bom/add-or-update-ui?mpi=bom-1','BOM信息','fa fa-dropbox');
+                //spLayui.createTableItem('/technology/bom/add-or-update-ui?mpi=bom-1','BOM信息','fa fa-dropbox');
             }
         });
 
@@ -164,7 +169,7 @@
             if (obj.event === 'delete') {
                 layer.confirm('确认要删除吗？', function (index) {
                     spUtil.ajax({
-                        url: '${request.contextPath}/basedata/materile/delete',
+                        url: '${request.contextPath}/technology/bom/delete',
                         async: false,
                         type: 'POST',
                         // 是否显示 loading

@@ -12,7 +12,7 @@
     <artifactId>mes</artifactId>
     <name>mes</name>
     <version>1.0.0</version>
-    <description>maven 骨架生成所需项目</description>
+    <description>mes</description>
     <packaging>jar</packaging>
 
     <properties>

@@ -1,6 +1,7 @@
 package com.wangziyang.mes.technology.controller;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.wangziyang.mes.common.BaseController;
 import com.wangziyang.mes.common.Result;
@@ -58,7 +59,7 @@ public class SpBomController extends BaseController {
      * @param spBom bom实体
      * @return 更改界面
      */
-    @ApiOperation("主数据维护修改界面")
+    @ApiOperation("工艺BOM管理修改界面")
     @GetMapping("/add-or-update-ui")
     public String addOrUpdateUI(Model model, SpBom spBom) throws Exception {
         if (StringUtils.isNotEmpty(spBom.getId())) {
@@ -81,9 +82,42 @@ public class SpBomController extends BaseController {
     @PostMapping("/page")
     @ResponseBody
     public Result page(SpBomReq req) {
-        IPage result = iSpBomService.page(req);
+        QueryWrapper qw = new QueryWrapper();
+        if (StringUtils.isNotEmpty(req.getMaterielCodeLike())) {
+            qw.likeRight("materiel_code",req.getMaterielCodeLike());
+        }
+        IPage result = iSpBomService.page(req,qw);
         return Result.success(result);
     }
 
+    /**
+     * 工艺BOM修改、新增
+     *
+     * @param spBom 物料实体类
+     * @return 执行结果
+     */
+    @ApiOperation("工艺BOM修改、新增")
+    @PostMapping("/add-or-update")
+    @ResponseBody
+    public Result addOrUpdate(SpBom spBom) {
+        iSpBomService.saveOrUpdate(spBom);
+        return Result.success();
+    }
+
+
+    /**
+     * 删除工艺BOM
+     *
+     * @param spBom 请求参数
+     * @return Result 执行结果
+     */
+    @ApiOperation("删除工艺BOM")
+    @ApiImplicitParams({@ApiImplicitParam(name = "req", value = "工艺BOM", defaultValue = "工艺BOM")})
+    @PostMapping("/delete")
+    @ResponseBody
+    public Result deleteByTableNameId(SpBom spBom) throws Exception {
+        iSpBomService.removeById(spBom.getId());
+        return Result.success();
+    }
 
 }
