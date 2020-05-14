@@ -201,7 +201,10 @@
 欢迎想一起开发的小伙伴。。此项目也支持大学生毕业设计。
 # MES国际
 [![MES](https://s1.ax1x.com/2020/04/10/GIRPEt.png "MESA认证")](http://www.mesa.org/)
+
 [![synfactory](https://s1.ax1x.com/2020/04/11/GHrk01.png "synf官服资料")](https://www.syntropicfactory.com/)
+
+[![ISA](https://s1.ax1x.com/2020/05/14/YBPeVH.png "ISA自动化学会")](https://www.isa.org/)
 
 ## QQ Group87652870
 [![QQ](https://img.shields.io/badge/QQ-87652870-green.svg?logo=tencent%20qq&logoColor=red)](https://jq.qq.com/?_wv=1027&k=55NGCxl)
